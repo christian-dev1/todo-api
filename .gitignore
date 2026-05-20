@@ -1,30 +1,20 @@
-# Maven
 target/
 *.jar
 *.war
 *.ear
 *.class
-
-# IntelliJ IDEA
 .idea/
 *.iml
 *.iws
 *.ipr
 out/
-
-# Eclipse
 .classpath
 .project
 .settings/
-
-# VS Code
 .vscode/
-
-# Secrets — ne jamais commiter
 .env
 *.env.local
 application-local.properties
 
-# OS
 .DS_Store
 Thumbs.db
