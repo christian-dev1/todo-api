@@ -25,8 +25,6 @@ public class TaskController {
 
     private final TaskService taskService;
 
-    // ==================== CREATE ====================
-
     @PostMapping
     @Operation(summary = "Créer une tâche", description = "Crée une nouvelle tâche avec un titre, une description et un statut")
     @ApiResponses({
@@ -37,8 +35,6 @@ public class TaskController {
         Task task = taskService.creerTache(taskDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(task);
     }
-
-    // ==================== READ ====================
 
     @GetMapping
     @Operation(summary = "Lire toutes les tâches", description = "Retourne toutes les tâches, avec possibilité de filtrer par statut")
